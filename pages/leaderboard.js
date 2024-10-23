@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getLeaderboard } from '../services/leaderboard';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([]);
@@ -19,6 +21,7 @@ export default function Leaderboard() {
 
   return (
     <div className="container mx-auto px-4">
+      <Header />
       <h1 className="text-4xl font-bold mb-4">Leaderboard</h1>
       {error && <p className="text-red-500 text-sm">{error}</p>}
       <table className="min-w-full bg-white">
@@ -39,6 +42,7 @@ export default function Leaderboard() {
           ))}
         </tbody>
       </table>
+      <Footer />
     </div>
   );
 }

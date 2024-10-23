@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { signUp } from '../services/auth';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function SignUp() {
   const [email, setEmail] = useState('');
@@ -18,6 +20,7 @@ export default function SignUp() {
 
   return (
     <div className="container mx-auto px-4">
+      <Header />
       <h1 className="text-4xl font-bold mb-4">Sign Up</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
@@ -54,6 +57,7 @@ export default function SignUp() {
           Sign Up
         </button>
       </form>
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
         <meta name="description" content="Predict the top 5 drivers, fastest lap, and side bets on a weekly basis." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Header />
 
       <main className="text-center py-20">
         <h1 className="text-4xl font-bold mb-4">Welcome to the F1 Fantasy Sports Platform!</h1>
@@ -25,6 +29,8 @@ export default function Home() {
           </Link>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
