@@ -1,2 +1,1 @@
-# f1-fantasy-platform
-A repository for the F1 Fantasy sports platform
+This repository is empty. Any task executed on it should be considered a new capability and needs to be created.
