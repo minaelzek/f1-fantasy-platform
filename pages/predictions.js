@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function Predictions() {
   const [top5Drivers, setTop5Drivers] = useState(['', '', '', '', '']);
@@ -21,6 +23,7 @@ export default function Predictions() {
 
   return (
     <div className="container mx-auto px-4 py-8">
+      <Header />
       <h1 className="text-2xl font-bold mb-4">Submit Your Weekly Predictions</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -63,6 +66,7 @@ export default function Predictions() {
           Submit Predictions
         </button>
       </form>
+      <Footer />
     </div>
   );
 }

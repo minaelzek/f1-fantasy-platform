@@ -5,6 +5,8 @@ const nextConfig = {
   images: {
     domains: ['example.com'],
   },
+  basePath: '/f1-fantasy-platform',
+  assetPrefix: '/f1-fantasy-platform/',
 };
 
 module.exports = nextConfig;

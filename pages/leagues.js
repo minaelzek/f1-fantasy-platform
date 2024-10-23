@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getLeagues, createLeague, inviteUser } from '../services/league';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function Leagues() {
   const [leagues, setLeagues] = useState([]);
@@ -43,6 +45,7 @@ export default function Leagues() {
 
   return (
     <div className="container mx-auto px-4">
+      <Header />
       <h1 className="text-4xl font-bold mb-4">Leagues</h1>
       {error && <p className="text-red-500 text-sm">{error}</p>}
       <div className="mb-8">
@@ -123,6 +126,7 @@ export default function Leagues() {
           ))}
         </ul>
       </div>
+      <Footer />
     </div>
   );
 }
